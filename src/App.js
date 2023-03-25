@@ -1,5 +1,4 @@
 import Sidebar from './Sidebar';
-import './style/App.css';
 
 function App() {
   return (
