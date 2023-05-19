@@ -1,30 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import cn from 'classnames';
 
-const FullWidthElement = ({ color, image, children }) => {
-  const bgStyle = {
-    backgroundColor: color,
-    backgroundImage: `url(${image})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  };
-
+function FullWidthElement(props) {
   return (
-    <div className={cn('w-screen h-48 flex justify-center items-center', { 'bg-no-repeat': image })} style={bgStyle}>
-      <div className="max-w-screen-lg mx-auto text-center">{children}</div>
+    <div className='container relative rounded-xl overflow-auto p-8 bg-purple-800'>
+
+
+      <div className='grid grid-cols-2 gap-4 font-mono leading-6'>
+        <div className='bg-green-400'>
+          <img src={props.img} alt='Bild'></img>
+        </div>
+        <div className='bg-green-400'>{props.children}</div>
+      </div>
+
     </div>
-  );
-};
-
-FullWidthElement.propTypes = {
-  color: PropTypes.string.isRequired,
-  image: PropTypes.string,
-  children: PropTypes.node.isRequired,
-};
-
-FullWidthElement.defaultProps = {
-  image: null,
-};
+  )
+}
 
 export default FullWidthElement;
