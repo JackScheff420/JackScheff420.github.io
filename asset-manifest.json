@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.809cc3b7.css",
-    "main.js": "/static/js/main.031d464a.js",
+    "main.css": "/static/css/main.7c41d941.css",
+    "main.js": "/static/js/main.3daf08b5.js",
+    "static/media/angebotsaufforderung.png": "/static/media/angebotsaufforderung.79a76c73c18d32579435.png",
     "index.html": "/index.html",
-    "main.809cc3b7.css.map": "/static/css/main.809cc3b7.css.map",
-    "main.031d464a.js.map": "/static/js/main.031d464a.js.map"
+    "main.7c41d941.css.map": "/static/css/main.7c41d941.css.map",
+    "main.3daf08b5.js.map": "/static/js/main.3daf08b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.809cc3b7.css",
-    "static/js/main.031d464a.js"
+    "static/css/main.7c41d941.css",
+    "static/js/main.3daf08b5.js"
   ]
 }
