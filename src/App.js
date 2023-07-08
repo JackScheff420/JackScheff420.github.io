@@ -290,7 +290,7 @@ function App() {
                 </div>
                 <div className="basis-1/2 justify-center text-center">
                   <div className="text-2xl mb-4 font-bold">
-                    Angebotsaufforderung 🐱‍🏍
+                    {data.title}
                   </div>
                   <div className="text-theme font-bold">
                     {data.description}
