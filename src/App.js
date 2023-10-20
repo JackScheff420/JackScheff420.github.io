@@ -17,53 +17,47 @@ function App() {
 
 
       <section id="nav">
-        <nav className="bg-theme border-b-2 border-theme fixed top-0 w-full z-50">
-          <div className="max-w-none mx-auto px-4">
-            <div className="flex items-center justify-between h-16">
-              <div className="flex items-center">
-
-                <a href="#" className="text-white text-xl mr-4 font-bold flex items-center transition-colors duration-300 hover:text-blue-400 hover:fill-blue-400">
+        <nav class="bg-theme border-b-2 border-theme fixed top-0 w-full z-50 p-4">
+          <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center sm:flex-row sm:justify-between h-16">
+              <div class="flex items-center">
+                <a href="#" class="text-white text-xl mr-4 font-bold flex items-center transition-colors duration-300 hover:text-blue-400 hover:fill-blue-400">
                   <svg
                     fill="#000000"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 fill-current mr-2"
+                    class="h-8 w-8 fill-current mr-2"
                     id="memory-alpha-m">
-
-                    <path d="M15 1V2H17V3H18V4H19V5H20V7H21V15H20V17H19V18H18V19H17V20H15V21H7V20H5V19H4V18H3V17H2V15H1V7H2V5H3V4H4V3H5V2H7V1H15M14 3H8V4H6V5H5V6H4V8H3V14H4V16H5V17H6V18H8V19H14V18H16V17H17V16H18V14H19V8H18V6H17V5H16V4H14V3M7 6H15L15 7L16 7V16H14V8H12V15H10V8H8V16H6V7L7 7L7 6Z">
-                    </path>
-
+                    <path d="M15 1V2H17V3H18V4H19V5H20V7H21V15H20V17H19V18H18V19H17V20H15V21H7V20H5V19H4V18H3V17H2V15H1V7H2V5H3V4H4V3H5V2H7V1H15M14 3H8V4H6V5H5V6H4V8H3V14H4V16H5V17H6V18H8V19H14V18H16V17H17V16H18V14H19V8H18V6H17V5H16V4H14V3M7 6H15L15 7L16 7V16H14V8H12V15H10V8H8V16H6V7L7 7L7 6Z"></path>
                   </svg>
-
-                  <span className="mr-2">Maximilian Scheffler</span>
-
+                  <span class="mr-2">Maximilian Scheffler</span>
                 </a>
               </div>
-              <div className="flex">
+              <div class="flex mt-4 sm:mt-0">
                 <button
                   href="#"
-                  className="text-theme hover:bg-theme-alt hover:text-theme-alt px-3 py-2 rounded-md text-sm font-medium"
+                  class="text-theme hover:bg-theme-alt hover:text-theme-alt px-3 py-2 rounded-md text-sm font-medium"
                   onClick={() => handleSectionScroll(homeSectionRef)}
                 >
                   Home
                 </button>
                 <button
                   href="#"
-                  className="text-theme hover:bg-theme-alt hover:text-theme-alt px-3 py-2 rounded-md text-sm font-medium"
+                  class="text-theme hover:bg-theme-alt hover:text-theme-alt px-3 py-2 rounded-md text-sm font-medium"
                   onClick={() => handleSectionScroll(aboutSectionRef)}
                 >
                   About
                 </button>
                 <button
                   href="#"
-                  className="text-theme hover:bg-theme-alt hover:text-theme-alt px-3 py-2 rounded-md text-sm font-medium"
+                  class="text-theme hover:bg-theme-alt hover:text-theme-alt px-3 py-2 rounded-md text-sm font-medium"
                   onClick={() => handleSectionScroll(projectsSectionRef)}
                 >
                   Projects
                 </button>
                 <button
                   href="#"
-                  className="text-theme hover:bg-theme-alt hover:text-theme-alt px-3 py-2 rounded-md text-sm font-medium"
+                  class="text-theme hover:bg-theme-alt hover:text-theme-alt px-3 py-2 rounded-md text-sm font-medium"
                   onClick={() => handleSectionScroll(contactSectionRef)}
                 >
                   Contact
@@ -75,15 +69,16 @@ function App() {
       </section>
 
 
+
       <section id="home"
         ref={homeSectionRef}
-        className="bg-theme py-8 pt-24 flex flex-col items-start">
-        <div className="container md:mx-auto max-w-6xl p-16 border-theme border-2 rounded-xl">
-          <h1 className="font-bold text-4xl text-theme mb-3">Anwendungsentwickler mit der Liebe zum Web</h1>
-          <p className="font-semibold text-base text-theme mb-3">Hi, ich bin Maximilian Scheffler. <br /> Ein passionierter Anwendungsentwickler in der nähe von Altenkirchen, Deutschland. 📍</p>
-          <div className="flex items-start">
+        className="bg-theme py-8 pt-36 flex flex-col items-start">
+        <div className="container mx-auto max-w-6xl p-4 md:p-16 border-theme border-2 rounded-xl">
+          <h1 className="font-bold text-2xl md:text-4xl lg:text-5xl text-theme mb-2 md:mb-3">Anwendungsentwickler mit der Liebe zum Web</h1>
+          <p className="font-semibold text-base md:text-lg lg:text-xl text-theme mb-2 md:mb-3">Hi, ich bin Maximilian Scheffler. <br /> Ein passionierter Anwendungsentwickler in der nähe von Altenkirchen, Deutschland. 📍</p>
+          <div className="flex items-start max-w-xs">
             <a
-              href={data.github}
+              href='https://github.com/JackScheff420'
               className="text-white hover:text-gray-400"
               target="_blank"
               rel="noopener noreferrer"
@@ -102,7 +97,7 @@ function App() {
             </a>
             <a
               href="https://www.linkedin.com/in/maximilian-scheffler-820a9a251"
-              className="text-white hover:text-gray-400 ml-4"
+              className="text-white hover:text-gray-400 ml-2 md:ml-4"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -115,12 +110,12 @@ function App() {
               </svg>
             </a>
           </div>
-          <div className="mt-8 flex">
-            <div className="font-bold text-2xl text-theme border-r-2 border-theme flex-initial">
+          <div className="mt-4 md:mt-8 flex">
+            <div className="font-bold text-lg md:text-2xl text-theme border-r-2 border-theme flex-initial">
               <h2 className=" mr-2">Tech-Stack</h2>
             </div>
 
-            <div className="flex items-center">
+            <div className="flex items-center ml-2 max-w-xs h-auto m-auto overflow-hidden">
 
               <svg
                 className="h-10 w-10 ml-2"
@@ -237,12 +232,12 @@ function App() {
 
 
       <section id="about" ref={aboutSectionRef} className="bg-theme py-8">
-        <div className="container md:mx-auto max-w-6xl p-16 border-theme text-theme border-2 rounded-xl">
-          <div className="flex flex-col md:flex-row">
-            <div className="basis-1/2 m-4">
+        <div className="container mx-auto max-w-6xl p-4 sm:p-16 border-theme text-theme border-2 rounded-xl">
+          <div className="flex flex-col sm:flex-row items-center">
+            <div className="w-full sm:w-1/2 m-4">
               <h1 className="text-3xl font-bold">Über mich</h1>
               <p className="mt-2">
-                Als Junior Front-End Entwickler verfüge ich über ein
+                Als Junior Full-Stack Entwickler verfüge ich über ein
                 beeindruckendes Arsenal an Fähigkeiten in HTML, CSS, JavaScript,
                 React, Tailwind und weiteren Programmiersprachen sowie Tools. Ich
                 zeichne mich durch das Gestalten und Pflegen responsiver Websites
@@ -255,11 +250,11 @@ function App() {
                 Webanwendungen zu entwickeln.
               </p>
             </div>
-            <div className="basis-1/2 m-4 flex justify-center">
+            <div className="w-full sm:w-1/2 m-4 flex justify-center">
               <img
                 src={require("./images/coding.gif")}
                 alt="website"
-                className="rounded-xl shadow-xl max-w-lg transition duration-300 ease-in-out hover:scale-105"
+                className="rounded-xl shadow-xl max-w-lg w-full sm:w-auto transition duration-300 ease-in-out hover:scale-105"
               />
             </div>
           </div>
@@ -268,8 +263,9 @@ function App() {
 
 
 
+
       <section id="projects" className="bg-theme py-8" ref={projectsSectionRef}>
-        <div className="container md:mx-auto max-w-6xl p-16 border-theme border-2 rounded-xl">
+        <div className="container mx-auto max-w-6xl p-4 sm:p-16 border-theme border-2 rounded-xl">
           <div className="flex flex-col">
             <div className="p-0 text-theme font-sans font-bold text-xl">
               Portfolio
@@ -277,25 +273,25 @@ function App() {
             <div className="text-3xl text-theme mb-10 font-bold">
               Each project is unique ✨
             </div>
-            <div className="grid gap-4 grid-flow-row w-full h-auto justify-center">
-              <div className="bg-theme text-theme border-spacing-5 border-theme border-2 rounded-xl shadow-2xl p-2 flex flex-row">
-                <div className="basis-1/2 m-4 ">
+            <div className="grid gap-4 grid-flow-row h-auto justify-center">
+              <div className="bg-theme text-theme border-spacing-5 border-theme border-2 rounded-xl shadow-2xl p-6 flex flex-col sm:flex-row">
+                <div className="w-full sm:w-1/2 mr-4">
                   <a target="_blank" href={data.demo} rel="noreferrer">
                     <img
                       src={require("./images/PortfolioWebsite.png")}
                       alt="website"
-                      className="rounded-xl shadow-xl max-w-lg transition duration-300 ease-in-out hover:scale-105"
+                      className="rounded-xl shadow-xl max-w-lg w-full mx-auto sm:mx-0 transition duration-300 ease-in-out hover:scale-105"
                     />
                   </a>
                 </div>
-                <div className="basis-1/2 justify-center text-center">
+                <div className="w-full sm:w-1/2 justify-center text-center">
                   <div className="text-2xl mb-4 font-bold">
                     {data.title}
                   </div>
                   <div className="text-theme font-bold">
                     {data.description}
                   </div>
-                  <div className="flex gap-4 justify-center mt-4">
+                  <div className="flex flex-wrap gap-4 justify-center mt-4">
                     <div className="p-2 text-xl font-semibold shadow-md shadow-black bg-theme-alt text-theme-alt">
                       {data.framework}
                     </div>
