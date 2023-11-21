@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.6a6f9115.css",
-    "main.js": "/static/js/main.84790ac0.js",
+    "main.js": "/static/js/main.0b1cd951.js",
     "static/media/coding.gif": "/static/media/coding.1d60b68cc25a690ef26d.gif",
     "static/media/PortfolioWebsite.png": "/static/media/PortfolioWebsite.c7150bb29425172ffb8b.png",
+    "static/media/sitzplatzbuchung.png": "/static/media/sitzplatzbuchung.7dbd9e429638500389aa.png",
     "static/media/Yachthafen Buchung.png": "/static/media/Yachthafen Buchung.3f9d98937ac7c8554815.png",
     "index.html": "/index.html",
     "main.6a6f9115.css.map": "/static/css/main.6a6f9115.css.map",
-    "main.84790ac0.js.map": "/static/js/main.84790ac0.js.map"
+    "main.0b1cd951.js.map": "/static/js/main.0b1cd951.js.map"
   },
   "entrypoints": [
     "static/css/main.6a6f9115.css",
-    "static/js/main.84790ac0.js"
+    "static/js/main.0b1cd951.js"
   ]
 }
