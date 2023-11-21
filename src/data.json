@@ -22,14 +22,14 @@
     "image": "./images/Yachthafen Buchung.png"
   },
   "sitzplatzbuchung":{
-    "title": "work in progress",
-    "description": "work in progress",
+    "title": "Sitzplatzbuchung",
+    "description": "Front-end für eine Simple Sitzplatzbuchung / Design Proof of concept ",
     "tools":{
       "framework": "React",
       "bootstrap":"Tailwind"
     },
     "github": "https://github.com/JackScheff420/sitzplatzbuchung",
     "demo": "https://github.com/JackScheff420/sitzplatzbuchung",
-    "image":"./images/Yachthafen Buchung.png"
+    "image":"./images/sitzplatzbuchung.png"
   }
 }
